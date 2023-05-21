@@ -37,5 +37,3 @@ app.get("tiktok", async (req, res, next) => {
 app.get("/", (req, res, next) => {
     res.json({"message":"Ok"})
 });
-
-s
