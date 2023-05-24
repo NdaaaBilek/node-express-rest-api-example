@@ -47,7 +47,7 @@ app.get("/xnxxdl", async (req, res, next) => {
         result
     })
 })
-app.get("tiktok", async (req, res, next) => {
+app.get("/tiktok", async (req, res, next) => {
     let url = req.query.url
     if (!url) return res.json({"message":"masukkan url"})
     const result = await scr.tiktok(url)
