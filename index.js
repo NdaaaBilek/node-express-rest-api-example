@@ -2,7 +2,7 @@ var express = require("express")
 var scr = require("api-dylux")
 var app = express()
 
-var HTTP_PORT = 8000
+var HTTP_PORT = 8080
 
 // Start server
 app.listen(HTTP_PORT, () => {
@@ -12,7 +12,7 @@ app.get("/ai", async (req, res, next) => {
     const { Configuration, OpenAIApi } = require("openai")
     let query = req.query.query
     if (!query) return res.json({"message":"masukkan query"})
-        const keynya = "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"  //Input your OpenAI api-Key -> https://beta.openai.com/account/api-keys
+        const keynya = `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`
 const configuration = new Configuration({
   apiKey: keynya,
 });
