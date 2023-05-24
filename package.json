@@ -12,6 +12,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "api-dylux": "^1.4.4",
-    "openai" "^3.2.1"
+    "openai": "^3.2.1"
   }
 }
